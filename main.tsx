@@ -1,0 +1,3 @@
+import React from 'react';import {createRoot} from 'react-dom/client';import RinkApp from './app/rink-app';import './app/globals.css';
+const parts=window.location.pathname.split('/').filter(Boolean);const role=parts[0]||'discover';const section=parts[1]||'home';const allowed=['home','music','rinks','billing','assist','roster','session','integrations','settings','store','guides','products'];
+createRoot(document.getElementById('root')!).render(role==='products'?<RinkApp role="skater" section="products"/>:['skater','coach','partner','discover','login'].includes(role)&&allowed.includes(section)?<RinkApp role={role} section={section}/>:<main style={{padding:40}}><h1>Page not found</h1><a href="/">Return to RinkMusic</a></main>);

@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/((?!assets/|store/|favicon.svg|demo-sound.wav|ice-flow.webp|integration-guide.txt).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

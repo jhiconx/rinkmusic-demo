@@ -1,0 +1,9 @@
+RinkMusic public demonstration
+
+This Vite/React app is a browser-local demonstration. Music uploads, notes, plans, keytags, and the sample queue save in IndexedDB in the visitor’s browser. No data goes to a server and no real accounts are created.
+
+To launch a real service: connect Google OAuth, email delivery, SMS verification, and eligible Instagram professional accounts; implement server-side user and partner roles; move records to a tenant-isolated database and audio to authenticated object storage; connect Stripe Billing/Connect with verified webhooks; obtain authorized rink APIs and map verified keytags; add a model provider and approved partner information for source-grounded help.
+
+Add approved affiliate destinations in lib/store-products.ts. Current links are direct retailer links and generate no tracked commissions.
+
+The HTML Quick guides describe the demo itself.
